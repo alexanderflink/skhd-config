@@ -93,3 +93,14 @@ space_mode < 6 : skhd -k "escape"; yabai -m space --focus 6
 space_mode < 7 : skhd -k "escape"; yabai -m space --focus 7
 space_mode < 8 : skhd -k "escape"; yabai -m space --focus 8
 space_mode < 9 : skhd -k "escape"; yabai -m space --focus 9
+
+# move to specific space
+space_mode < shift - 1 : skhd -k "escape"; yabai -m space --move 1
+space_mode < shift - 2 : skhd -k "escape"; yabai -m space --move 2
+space_mode < shift - 3 : skhd -k "escape"; yabai -m space --move 3
+space_mode < shift - 4 : skhd -k "escape"; yabai -m space --move 4
+space_mode < shift - 5 : skhd -k "escape"; yabai -m space --move 5
+space_mode < shift - 6 : skhd -k "escape"; yabai -m space --move 6
+space_mode < shift - 7 : skhd -k "escape"; yabai -m space --move 7
+space_mode < shift - 8 : skhd -k "escape"; yabai -m space --move 8
+space_mode < shift - 9 : skhd -k "escape"; yabai -m space --move 9
