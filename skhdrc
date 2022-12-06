@@ -52,8 +52,11 @@ window_mode < tab : skhd -k "escape"; yabai -m window --focus recent
 # toggle split view
 window_mode < s : skhd -k "escape"; yabai -m window --toggle split
 
-# toggle window mode
+# toggle fullscreen
 window_mode < f : skhd -k "escape"; yabai -m window --toggle zoom-fullscreen
+
+# toggle float
+window_mode < m : skhd -k "escape"; yabai -m window --toggle float
 
 # close window
 window_mode < c : skhd -k "escape"; yabai -m window --close
@@ -82,6 +85,9 @@ space_mode < n : skhd -k "escape"; yabai -m space --create; yabai -m space --foc
 
 # close space
 space_mode < c : skhd -k "escape"; yabai -m space --destroy
+
+# cycle layout
+space_mode < space : skhd -k "escape"; yabai -m space --rotate 90
 
 # focus to specific space
 space_mode < 1 : skhd -k "escape"; yabai -m space --focus 1
