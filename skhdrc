@@ -1,7 +1,7 @@
 # define modes
-:: default : echo "default" | nc -u localhost 9001
-:: window_mode : echo "window" | nc -u localhost 9001
-:: space_mode : echo "space" | nc -u localhost 9001
+:: default : echo "mode=default" | nc -U tmp/statusbar
+:: window_mode : echo "mode=window" | nc -U tmp/statusbar
+:: space_mode : echo "mode=space" | nc -U tmp/statusbar
 
 window_mode < escape ; default 
 space_mode < escape ; default 
